@@ -5,7 +5,7 @@
 
 > 毎回 import を忘れずに
 
-＃ Inline Style -　インストール　　なし
+# Inline Style -　インストール　　なし
 
 ```jsx
   const containerStyle = {
@@ -16,7 +16,7 @@
   );
 ```
 
-＃ CssModules
+# CssModules
 
 - インストール　　なし
   > `comportnets` ディレクトリ下に`CssModules.module.scss`ファイルを作成する  
@@ -36,3 +36,31 @@ import classes from "./CssModules.module.scss"
     <div className={classes.container}>
   );
 ```
+
+# StyledJsx
+
+- インストール (styled-jsx)
+
+  > `StyledJsx.jsx`に以下を記入
+
+  ```jsx
+    return (
+    <>
+      <div className="container">
+      <style jsx="true">
+        {`
+          .container {
+            <!-- cssを記入 -->
+          }
+        `}
+      </style>
+    </>
+  );
+  ```
+
+# StyledComponents
+
+- インストール (styled-components)
+
+- `StyledComponents.jsx`に以下を記入
+  >
